@@ -1,0 +1,40 @@
+#Collections {
+  .container {
+    margin: 0 auto;
+    max-width: 1100px;
+    .collectionCards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      .collectionCard {
+        cursor: pointer;
+        position: relative;
+        .collectionCardImage {
+          img {
+            width: 350px;
+            height: 450px;
+            transition: 0.7s;
+          }
+        }
+        .collectionCardImage img:hover {
+          transform: scale(1.06);
+        }
+        .collectionCardText {
+          position: absolute;
+          bottom: 0;
+          left: 25px;
+
+          .collectionDesc {
+            color: black;
+            font-size: 20px;
+            margin-bottom: 2px;
+          }
+          .collectionCategory {
+            color: black;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}

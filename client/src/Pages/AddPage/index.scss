@@ -1,0 +1,65 @@
+#AddPage {
+  .formik {
+    form {
+      margin-bottom: 200px;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 30px;
+      }
+      input {
+        all: unset;
+        padding: 20px 30px;
+        border: 1px solid gray;
+        background-color: whitesmoke;
+      }
+      button {
+        all: unset;
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid gray;
+        background-color: whitesmoke;
+      }
+    }
+  }
+  .productsTable{
+    .searchBar{
+        input{
+            all: unset;
+            padding: 20px 20px;
+            background-color: whitesmoke;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+    }
+    .sortByPrice{
+        margin-bottom: 15px;
+        button{
+            all: unset;
+            background-color: whitesmoke;
+            padding: 15px 15px;
+            cursor: pointer;
+        }
+    }
+    .sortByName{
+        button{
+            all: unset;
+            background-color: whitesmoke;
+            padding: 15px 15px;
+            cursor: pointer;
+        }
+
+    }
+    table{
+        padding: 20px 40px;
+        tr td{
+            border: 1px solid black;
+        }
+        .deleteBtn{
+            padding: 0 20px;
+        }
+        
+    }
+
+  }
+}

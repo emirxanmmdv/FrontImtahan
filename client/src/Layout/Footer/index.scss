@@ -1,0 +1,64 @@
+#Footer {
+    padding: 100px 0;
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    .footerContents {
+        display: flex;
+        
+      .topFooter {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        gap: 50px;
+        .leftFooter {
+          .navigations {
+            .title {
+              margin-bottom: 20px;
+              font-size: 19px;
+            }
+            ul {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              
+
+            }
+          }
+        }
+      }
+      .midFooter{
+        .promo{
+            .promoTitle{
+                margin-bottom: 20px;
+              font-size: 19px;
+                
+
+            }
+            .promoImg{
+                img{
+                    width: 270px;
+                    height: 140px;
+                }
+            }
+            .promoDesc{
+                color: #7971EA;
+
+            }
+            .expireData{
+                color: gray;
+
+            }
+        }
+      }
+      .rightFooter{
+        .contactInfo{
+            .infoCards{
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+      }
+    }
+  }
+}

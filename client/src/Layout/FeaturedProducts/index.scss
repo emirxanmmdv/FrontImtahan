@@ -1,0 +1,50 @@
+#FeaturedProducts {
+  margin-top: 200px;
+  .container {
+    margin: 0 auto;
+    max-width: 1800px;
+    .FeaturedProductsTitle {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      color: black;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      
+      .product {
+        border: 1px solid black;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img {
+          background-size: cover;
+        }
+        .cardText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          .cardTitle {
+            color: #7971ea;
+            margin-bottom: 5px;
+          }
+          .cardInfo {
+            color: gray;
+            margin-bottom: 5px;
+
+          }
+          .cardPrice {
+            color: #7971ea;
+          }
+        }
+      }
+    }
+  }
+}
