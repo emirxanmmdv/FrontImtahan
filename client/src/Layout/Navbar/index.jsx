@@ -28,8 +28,9 @@ const Navbar = () => {
               <Link to={"/wishlist"}>
                 <CiHeart />
                 </Link>
+              <Link to={"/basket"}>
+              <CiShoppingBasket /></Link>
               
-              <CiShoppingBasket />
             </div>
           </div>
         </div>

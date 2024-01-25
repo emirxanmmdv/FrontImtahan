@@ -5,6 +5,7 @@ import AddPage from './Pages/AddPage'
 import DetailsPage from './Pages/DetailsPage'
 import WishlistPage from './Pages/WishlistPage'
 import HomePage from './Pages/Home'
+import BasketPage from './Pages/BasketPage'
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
         <Route path='/addpage' element={<AddPage/>}/>
         <Route path='/details/:id' element={<DetailsPage/>}/>
         <Route path='/wishlist' element={<WishlistPage/>} />
+        <Route path='/basket' element={<BasketPage/>} />
+
         <Route/>
       </Route>
     </Routes>

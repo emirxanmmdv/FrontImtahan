@@ -4,6 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { WishlistContext } from "../../Context/WishlistContext.jsx";
+import { BasketContext } from "../../Context/BasketContext.jsx";
 
 const FeaturedProducts = () => {
   const [product, setProduct] = useState("");
@@ -17,6 +18,8 @@ const FeaturedProducts = () => {
     getData();
   }, []);
   const { toggleWishlist, wishlist } = useContext(WishlistContext);
+  const { AddToBasket, RemoveFromBasket, increase, decrease, basket } =
+    useContext(BasketContext);
 
   return (
     <section id="FeaturedProducts">
@@ -48,6 +51,11 @@ const FeaturedProducts = () => {
                     <div className="AddToWishlist">
                       <button onClick={() => toggleWishlist(item)}>
                         Add to Wishlist
+                      </button>
+                    </div>
+                    <div className="AddToBasket">
+                      <button onClick={() => AddToBasket(item)}>
+                        Add to Basket
                       </button>
                     </div>
                   </div>
