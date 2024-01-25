@@ -2,6 +2,23 @@
     .detailsCart{
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+        img{
+            width: 600px;
+            height: 400px;
+        }
+        h1{
+            color: #7971EA;
+            margin-bottom: 20px;
+
+        }
+        p{
+            color: gray;
+            margin-bottom: 20px;
+
+        }
+        span{
+            color: #7971EA;
+        }
     }
 }

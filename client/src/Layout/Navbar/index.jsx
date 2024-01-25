@@ -1,7 +1,7 @@
 import React from "react";
 import { CiSearch, CiHeart, CiShoppingBasket } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
 
 const Navbar = () => {
@@ -25,7 +25,10 @@ const Navbar = () => {
           <div className="rightSide">
             <div className="icons">
               <FaUser />
-              <CiHeart />
+              <Link to={"/wishlist"}>
+                <CiHeart />
+                </Link>
+              
               <CiShoppingBasket />
             </div>
           </div>

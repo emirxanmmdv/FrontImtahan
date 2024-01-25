@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./index.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
+import { WishlistContext } from "../../Context/WishlistContext.jsx";
 
 const FeaturedProducts = () => {
   const [product, setProduct] = useState("");
@@ -15,6 +16,7 @@ const FeaturedProducts = () => {
   useEffect(() => {
     getData();
   }, []);
+  const { toggleWishlist, wishlist } = useContext(WishlistContext);
 
   return (
     <section id="FeaturedProducts">
@@ -39,9 +41,14 @@ const FeaturedProducts = () => {
                     </div>
                     <div className="cardPrice">${item.price}</div>
                     <div className="seeDetails">
-                      <Link to={`/details/id`}>
+                      <Link to={`/details/${item._id}`}>
                         <FaEye />
                       </Link>
+                    </div>
+                    <div className="AddToWishlist">
+                      <button onClick={() => toggleWishlist(item)}>
+                        Add to Wishlist
+                      </button>
                     </div>
                   </div>
                 </div>

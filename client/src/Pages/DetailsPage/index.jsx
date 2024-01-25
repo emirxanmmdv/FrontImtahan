@@ -20,9 +20,9 @@ const DetailsPage = () => {
         {
             detail ? <div className='detailsCart'>
                 <img src={detail.image}/>
-                <p>{detail.name}</p>
+                <h1>{detail.name}</h1>
                 <p>{detail.info}</p>
-                <p>{detail.price}</p>
+                <span>${detail.price}</span>
             </div> : ""
         } 
         
